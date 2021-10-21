@@ -10,7 +10,23 @@ export default function Home() {
       >
         Click me
       </button>
-      <div className="w-10 box h-10 bg-black m-20 p-10"></div>
+      <div
+        onMouseEnter={() =>
+          animate(
+            '.box',
+            { x: 100, rotate: 45, backgroundColor: 'red' },
+            { duration: 0.5 }
+          )
+        }
+        onMouseLeave={() => {
+          animate(
+            '.box',
+            { x: 0, rotate: 0, backgroundColor: 'black' },
+            { duration: 0.5 }
+          );
+        }}
+        className="w-20 box h-20 bg-black m-20 p-10"
+      ></div>
     </div>
   );
 }
