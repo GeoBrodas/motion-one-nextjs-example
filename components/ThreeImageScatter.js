@@ -1,16 +1,21 @@
 import CardLayout from './Layout/CardLayout';
 import Image from 'next/image';
+import { animate } from 'motion';
 
 function ThreeImageScatter() {
   // oneMouseOver
   // onMouseOut
 
   function onHover() {
-    // code
+    animate('.one', { x: -70 }, { duration: 0.5 });
+    animate('.two', { x: -40 }, { duration: 0.5 });
+    animate('.three', { x: -10 }, { duration: 0.5 });
   }
 
   function onHoverOff() {
-    // code
+    animate('.one', { x: 0 }, { duration: 0.5 });
+    animate('.two', { x: 0 }, { duration: 0.5 });
+    animate('.three', { x: 0 }, { duration: 0.5 });
   }
 
   return (
@@ -18,9 +23,9 @@ function ThreeImageScatter() {
       <div
         onMouseOver={onHover}
         onMouseOut={onHoverOff}
-        className="pt-20 w-auto flex justify-center relative"
+        className="pt-20 w-auto h-32 flex justify-center relative"
       >
-        <div className="absolute one top-2 right-10 z-0">
+        <div className="absolute one top-8 right-10 z-0">
           <Image
             className="rounded-full"
             alt="one"
@@ -29,7 +34,7 @@ function ThreeImageScatter() {
             height="60"
           />
         </div>
-        <div className="absolute two top-2 right-5 z-10">
+        <div className="absolute two top-8 right-5 z-10">
           <Image
             className=" rounded-full"
             alt="two"
@@ -38,7 +43,7 @@ function ThreeImageScatter() {
             height="60"
           />
         </div>
-        <div className="absolute three top-2 right-0 z-20">
+        <div className="absolute three top-8 right-0 z-20">
           <Image
             className=" rounded-full"
             alt="three"
