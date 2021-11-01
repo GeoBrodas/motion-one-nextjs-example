@@ -1,4 +1,5 @@
 import Bounce from '@/components/Bounce';
+import Hydrophillic from '@/components/Hydrophillic';
 import OnClick from '@/components/OnClick';
 import OnHover from '@/components/OnHover';
 import ThreeImageScatter from '@/components/ThreeImageScatter';
@@ -10,6 +11,7 @@ export default function Home() {
       <OnHover />
       <ThreeImageScatter />
       <Bounce />
+      <Hydrophillic />
     </div>
   );
 }
