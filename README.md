@@ -2,6 +2,9 @@
 
 ![Preview-1](/public/readme-images/preivew-1.gif)
 ![Preview-2](/public/readme-images/preview-2.gif)
+
+<br />
+
 ![Preview-3](/public/readme-images/github-preview.gif)
 
 ---
