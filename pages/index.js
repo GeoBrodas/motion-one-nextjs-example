@@ -1,5 +1,6 @@
 import Bounce from '@/components/Bounce';
 import Hydrophillic from '@/components/Hydrophillic';
+import MusicWaveform from '@/components/MusicWaveform';
 import OnClick from '@/components/OnClick';
 import OnHover from '@/components/OnHover';
 import ThreeImageScatter from '@/components/ThreeImageScatter';
@@ -12,6 +13,7 @@ export default function Home() {
       <ThreeImageScatter />
       <Bounce />
       <Hydrophillic />
+      <MusicWaveform />
     </div>
   );
 }

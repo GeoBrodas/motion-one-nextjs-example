@@ -17,23 +17,23 @@ function Hydrophillic() {
       <div className="flex justify-between">
         <button
           onClick={formations}
-          className="bg-gray-300 rounded-md py-1 px-2 text-sm"
+          className="bg-gray-300 hover:bg-gray-400 rounded-md py-1 px-2 text-sm"
         >
           Formation!
         </button>
         <button
           onClick={reGroup}
-          className="bg-gray-300 rounded-md py-1 px-2 text-sm"
+          className="bg-gray-300 hover:bg-gray-400 rounded-md py-1 px-2 text-sm"
         >
           Regroup!
         </button>
       </div>
       <div className="h-20 pt-4 flex justify-center">
-        <div className="bg-red-200 pawn w-3 h-3 rounded-full"></div>
-        <div className="bg-red-200 pawn w-3 h-3 rounded-full"></div>
-        <div className="bg-red-200 pawn w-3 h-3 rounded-full"></div>
-        <div className="bg-red-200 pawn w-3 h-3 rounded-full"></div>
-        <div className="bg-red-200 pawn w-3 h-3 rounded-full"></div>
+        <div className="bg-red-200 pawn w-3 h-3 rounded-full mx-1"></div>
+        <div className="bg-red-200 pawn w-3 h-3 rounded-full mx-1"></div>
+        <div className="bg-red-200 pawn w-3 h-3 rounded-full mx-1"></div>
+        <div className="bg-red-200 pawn w-3 h-3 rounded-full mx-1"></div>
+        <div className="bg-red-200 pawn w-3 h-3 rounded-full mx-1"></div>
       </div>
     </CardLayout>
   );
